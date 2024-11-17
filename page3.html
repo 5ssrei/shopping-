@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>購物車</h1>
+        <nav>
+            <a href="page2.html" class="nav-link">上一頁</a>
+            <button class="login-btn" onclick="location.href='login.html'">登入</button>
+
+        </nav>
+    </header>
+    <main>
+        <section id="cart-items" class="cart-grid">
+            <!-- 購物車內容將使用 JavaScript 動態生成 -->
+        </section>
+        <div class="cart-summary">
+            <p>總金額：<span id="total-price">$0</span></p>
+            <button id="checkout" class="checkout-btn" onclick="location.href='payment.html'">結帳</button>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>公司名稱: Demo Company</p>
+            <p>聯繫方式: support@demo.com</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

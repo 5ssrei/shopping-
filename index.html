@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品清單</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- 浮動購物車 -->
+        <div id="floating-cart">
+            <button id="floating-cart-btn">購物車</button>
+        </div>
+    <!-- 頂部導航 -->
+    <header>
+        <div id="greeting">您好，歡迎光臨！</div>
+        <input type="text" id="search-bar" placeholder="搜尋商品..." />
+        <button id="cart-button" class="cart-btn">購物車</button>
+    </header>
+
+    <!-- 商品清單 -->
+    <div class="product-list">
+        <!-- 商品 1 -->
+        <div class="product" data-name="商品 1" data-price="500">
+            <img src="img/product1.jpg" alt="商品 1" class="product-image">
+            <h3 class="product-name">商品 1</h3>
+            <p class="product-price">$500</p>
+            <button class="add-to-cart">加入購物車</button>
+        </div>
+        <!-- 商品 2 -->
+        <div class="product" data-name="商品 2" data-price="800">
+            <img src="img/product2.jpg" alt="商品 2" class="product-image">
+            <h3 class="product-name">商品 2</h3>
+            <p class="product-price">$800</p>
+            <button class="add-to-cart">加入購物車</button>
+        </div>
+        <!-- 商品 3 -->
+        <div class="product" data-name="商品 3" data-price="1200">
+            <img src="img/product3.jpg" alt="商品 3" class="product-image">
+            <h3 class="product-name">商品 3</h3>
+            <p class="product-price">$1200</p>
+            <button class="add-to-cart">加入購物車</button>
+        </div>
+    </div>
+
+    <!-- 分頁按鈕 -->
+    <div class="pagination">
+        <button id="prev-page" class="page-btn">上一頁</button>
+        <button id="next-page" class="page-btn">下一頁</button>
+    </div>
+
+    <!-- 購物車目錄 -->
+    <div id="cart-menu" class="hidden">
+        <h2>購物車</h2>
+        <div id="cart-items"></div>
+        <button id="checkout-button" class="product-button">結帳</button>
+    </div>
+
+    <!-- 結帳畫面 -->
+    <div id="checkout-modal" class="hidden">
+        <h2>信用卡支付</h2>
+        <form id="payment-form">
+            <label for="card-number">信用卡號碼：</label>
+            <input type="text" id="card-number" placeholder="輸入信用卡號碼" required />
+            <button type="submit">確認支付</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

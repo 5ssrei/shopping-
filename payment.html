@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信用卡支付</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>信用卡支付</h1>
+    </header>
+    <main class="payment-container">
+        <form class="payment-form">
+            <label for="card-number">信用卡號碼</label>
+            <input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+            <label for="expiry-date">到期日</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" placeholder="XXX" required>
+
+            <button type="submit" class="payment-submit">支付</button>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>公司名稱: Demo Company</p>
+            <p>聯繫方式: support@demo.com</p>
+        </div>
+    </footer>
+</body>
+</html>

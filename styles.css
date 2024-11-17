@@ -1,0 +1,123 @@
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #eae7dc, #d8c3a5); /* 莫蘭迪米白與暖灰漸層背景 */
+    overflow-x: hidden;
+}
+
+/* 標題與導航 */
+header {
+    background-color: #a7b1ae; /* 莫蘭迪柔灰藍 */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link, .cart-btn, .login-btn {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #c6c7b2; /* 莫蘭迪淡橄欖綠 */
+    color: #4a4a4a; /* 深灰文字 */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover, .cart-btn:hover, .login-btn:hover {
+    background-color: #8b9a8c; /* 莫蘭迪深灰綠 */
+    transform: translateY(-3px); /* 輕微浮動效果 */
+}
+
+/* 商品清單 */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.product {
+    background: #f7f4f2; /* 莫蘭迪米白 */
+    border: 1px solid #d3cec4; /* 柔灰邊框 */
+    border-radius: 8px;
+    width: calc(30% - 1rem);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* 商品名稱與價格 */
+.product-name {
+    font-size: 1.2rem;
+    color: #4a4a4a; /* 深灰色 */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #8b9a8c; /* 莫蘭迪深灰綠 */
+    margin-bottom: 1rem;
+}
+
+/* 按鈕樣式 */
+.product-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #c6c7b2; /* 莫蘭迪橄欖綠 */
+    color: #4a4a4a; /* 深灰文字 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #8b9a8c; /* 深灰綠 */
+}
+
+/* 可愛背景動畫 */
+body::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: #d3cec4; /* 柔灰圓形背景 */
+    border-radius: 50%;
+    animation: float 4s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, 30px);
+    }
+}
