@@ -1,0 +1,117 @@
+
+/* 基本設置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 頁面導航樣式 */
+header {
+    background-color: #c5d0e2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 80px;
+}
+
+.nav-list a {
+    color: #374052;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+.nav-list a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #7e8fa0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-list a:hover {
+    color: #7e8fa0;
+}
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 20px;
+    float: right;
+    color: #374052; 
+    cursor: pointer;
+}
+.nav-list .icon:active {
+    color: #7e8fa0;  /* 點擊時顏色變化 */
+}
+
+/* 搜尋框 (尚未實現功能，隱藏) */
+#search-box {
+    display: none;
+    margin-left: 10px;
+}
+
+/* 主體內容設置 */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* 側邊欄樣式 */
+.sidebar {
+    width: 200px;
+    background-color: #E2ECF2;
+    padding: 15px;
+    border-right: 2px solid #848fa5;
+
+}
+
+.sidebar h2 {
+    font-size: 28px;
+    margin-bottom:  20px;
+}
+
+.category-list {
+    list-style-type: none;
+}
+
+.category-list li {
+    margin: 15px 0;
+}
+
+.category-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.category-list a:hover {
+    color: #9ea3b0;
+}
+
+/* ???????????主要內容樣式?????????? */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
